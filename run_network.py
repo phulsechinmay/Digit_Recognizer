@@ -13,7 +13,7 @@ testData = testData
 
 neuralNetwork = network.Network([784, hiddenLayerSize, 10])
 
-neuralNetwork.StochasticGradientDescent(trainingData, epochs, batchSize, learningRate, testData = None)
+neuralNetwork.StochasticGradientDescent(trainingData, epochs, batchSize, learningRate, testData = testData)
 
 i = 0
 for (x,y) in testData:
